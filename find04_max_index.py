@@ -5,4 +5,9 @@ def find_max_index(data):
         data: list of numbers
     returns: index of maximum number in the list
     """
-    return 0
+    data = data
+    data.sort()
+    return data.index(data[-1])
+
+
+print(find_max_index([2, 3, 1, 4, 7, 9]))
