@@ -12,6 +12,8 @@ def find_max_odd(data):
         if data[i] % 2 != 0:
             m = data[i]
         i += 1
+    if m == 0:
+        return -1
     return m
 
 
