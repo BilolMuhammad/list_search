@@ -8,12 +8,12 @@ def find_max_even(data):
     data = data
     data.sort()
     idx = 0
-    ans = 0
+    ans = []
     con = 0
 
     while con < len(data):
         if data[idx] % 2 == 0:
-            ans = data[idx]
+            ans.append(data[idx])
         idx += 1
         con += 1
     return ans
