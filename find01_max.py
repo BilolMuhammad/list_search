@@ -5,5 +5,9 @@ def find_max(data):
         data: list of numbers
     returns: maximum number in the list
     """
-    return 0
-    
+    max = data
+    max.sort(reverse=True)
+    return max[0]
+
+
+print(find_max([2, 1, 4, 9, 7]))
