@@ -8,7 +8,7 @@ def find_min_even(data):
 
     i, min = 0, 0
     data = data
-    data.sort(reversed=True)
+    data.sort(reverse=True)
     while i < len(data):
         if data[i] % 2 == 0:
             min = data[i]
@@ -16,3 +16,6 @@ def find_min_even(data):
     if min == 0:
         return -1
     return min
+
+
+print(find_min_even([1, 4, 55, 6, 2]))
