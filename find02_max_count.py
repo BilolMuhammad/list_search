@@ -5,4 +5,10 @@ def find_max_count(data):
         data: list of numbers
     returns: count of maximum numbers in the list
     """
-    return 0
+    data = data
+    data.sort(reverse=True)
+    max1 = data[0]
+    return data.count(max1)
+
+
+print(find_max_count([1, 2, 1, 4, 3, 4, 4]))
