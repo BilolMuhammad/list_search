@@ -12,9 +12,9 @@ def find_max_index(data):
     #     i += 1
     # return data.index(_m)
     d = data
-    d.sort()
+    data.sort()
     max = d[-1]
-    return data.index(max)
+    return d
 
 
-print(find_max_index([2, 3, 1, 4, 7, 9]))
+print(find_max_index([8, 3, 1, 4, 7, 9]))
