@@ -7,16 +7,17 @@ def find_max_even(data):
     """
     data = data
     data.sort()
-    idx = 0
-    ans = []
-    con = 0
+    i = 0
+    ans = 0
 
-    while con < len(data):
-        if data[idx] % 2 == 0:
-            ans.append(data[idx])
-        idx += 1
-        con += 1
+    while i < len(data):
+        if data[i] % 2 == 0:
+            ans = data[i]
+
+        i += 1
+    if ans == 0:
+        return -1
     return ans
 
 
-print(find_max_even([1, 2, 3, 1, 29, 6, 0]))
+print(find_max_even([1,  3, 1, 29]))
